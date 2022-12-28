@@ -1,0 +1,21 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #e6e0ce;
+}
+
+#project {
+  background-color: #6a6a34;
+}
+
+.btn {
+  color: white;
+}
+
+section {
+  padding-top: 4rem;
+}
+
+.background-color-white {
+  border: 5px solid white;
+  border-radius: 20px;
+}
