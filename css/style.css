@@ -3,6 +3,13 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.progress {
+  background-color: #ffcdd2 !important;
+}
+.determinate {
+  background-color: #b71c1c !important;
+}
+
 .parallax-container {
   height: 20%;
 }
@@ -12,11 +19,16 @@
   opacity: 0.5 !important;
 }
 
-.contributor h3 {
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+.contributor-list {
+  margin-top: 25px;
 }
 
 .contributor img {
-  max-width: 125px;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+  padding-top: 10%;
+  max-width: 40%;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.25));
+}
+
+section {
+  padding: 20px 0;
 }
