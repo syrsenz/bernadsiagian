@@ -25,9 +25,9 @@
             <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
               <li><a href="#about">About Me</a></li>
-              <li><a href="#myproject">My Project</a></li>
+              <li><a href="#project">My Project</a></li>
               <li><a href="#contributor">Contributor</a></li>
-              <li><a href="#contactme">Contact Me</a></li>
+              <li><a href="#contact">Contact Me</a></li>
             </ul>
           </div>
         </div>
@@ -38,9 +38,9 @@
     <!-- Side Navbar -->
     <ul class="sidenav" id="mobile-nav">
       <li><a href="#about">About Me</a></li>
-      <li><a href="#myproject">My Project</a></li>
+      <li><a href="#project">My Project</a></li>
       <li><a href="#contributor">Contributor</a></li>
-      <li><a href="#contactme">Contact Me</a></li>
+      <li><a href="#contact">Contact Me</a></li>
     </ul>
     <!-- End of Side Navbar -->
 
@@ -73,7 +73,7 @@
     <!-- End of Slider -->
 
     <!-- About Me -->
-    <section id="about" class="about">
+    <section id="about" class="about scrollspy">
       <div class="container">
         <div class="row">
           <h3 class="center grey-text text-darken-3">About Me</h3>
@@ -125,31 +125,55 @@
     </div> -->
     <!-- End of About Me -->
 
-    <!-- Contributor -->
-    <section id="contributor" class="contributor blue-grey lighten-5">
+    <!-- My Project -->
+    <section id="project" class="project scrollspy blue-grey lighten-5">
       <div class="container">
         <div class="row">
-          <h3 class="center grey-text text-darken-3">Contributor</h3>
-          <div class="contributor-list">
+          <h3 class="center grey-text text-darken-3">My Project</h3>
+          <div class="project-list">
             <div class="row">
-              <div class="col m3 s6 center">
-                <a href="https://99designs.com/profiles/5286804" class="99designs"><img src="img/contributor/99designs-logo.png" /></a>
+              <div class="col m3 s12 center">
+                <img src="img/myproject/project1.jpg" />
               </div>
-              <div class="col m3 s6 center">
-                <a href="https://www.shutterstock.com/id/g/Syrsenz" class="shutterstock"><img src="img/contributor/shutterstock-logo.png" /></a>
+              <div class="col m3 s12 center">
+                <img src="img/myproject/project2.jpg" />
               </div>
-              <div class="col m3 s6 center">
-                <a href="https://creativemarket.com/users/syrsenz" class="creativemarket"><img src="img/contributor/creative-market-logo.png" /></a>
+              <div class="col m3 s12 center">
+                <img src="img/myproject/project1.jpg" />
               </div>
-              <div class="col m3 s6 center">
-                <a href="https://dribbble.com/syrsenz" class="dribbble"><img src="img/contributor/dribbble-logo.png" /></a>
+              <div class="col m3 s12 center">
+                <img src="img/myproject/project2.jpg" />
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End of About Me -->
+    <!-- End of My Project -->
+
+    <!-- Contributor -->
+    <section id="contributor" class="contributor scrollspy">
+      <div class="container">
+        <div class="row">
+          <h3 class="center grey-text text-darken-3">Contributor</h3>
+          <div class="contributor-list">
+            <div class="col m3 s6 center">
+              <a href="https://99designs.com/profiles/5286804" class="99designs"><img src="img/contributor/99designs-logo.png" /></a>
+            </div>
+            <div class="col m3 s6 center">
+              <a href="https://www.shutterstock.com/id/g/Syrsenz" class="shutterstock"><img src="img/contributor/shutterstock-logo.png" /></a>
+            </div>
+            <div class="col m3 s6 center">
+              <a href="https://creativemarket.com/users/syrsenz" class="creativemarket"><img src="img/contributor/creative-market-logo.png" /></a>
+            </div>
+            <div class="col m3 s6 center">
+              <a href="https://dribbble.com/syrsenz" class="dribbble"><img src="img/contributor/dribbble-logo.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contributor -->
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -164,6 +188,11 @@
         indicators: false,
         height: 500,
         interval: 3500,
+      });
+
+      const scroll = document.querySelectorAll(".scrollspy");
+      M.ScrollSpy.init(scroll, {
+        scrollOffset: 5,
       });
 
       const parallax = document.querySelectorAll(".parallax");
