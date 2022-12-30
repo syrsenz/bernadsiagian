@@ -1,2 +1,2 @@
-# bernadsiagian.github.io
+# bernadsiagian
 web portofolio
